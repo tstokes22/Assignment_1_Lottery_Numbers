@@ -53,9 +53,12 @@ int main() {
     cin >> numOfTicketInput;
     numOfTicket(ticketptr);
 
-    cout << "\nYou have selected (" << numOfBall(ballptr) << ") numbers \n ";
-    cout << "\nThe numbers will range from (1 to " << largestNum(largetptr) <<")\n ";
+    // Echo statements (Number of numbers, Range of Values, Number of ticket guesses)
+    cout << "\nYou have selected (" << numOfBall(ballptr) << ") number(s). \n ";
+    cout << "\nThe numbers will range from (1 to " << largestNum(largetptr) <<").\n ";
+    cout << "\nYou have selected (" << numOfTicket(ticketptr) <<") ticket(s). \n ";
 
+    // Echo of array of ticket(s)
     cout << "\nYOUR LOTTERY SELECTIONS ARE: \n\n";
     ticketNum(numOfBall(ballptr), largestNum(largetptr), numOfTicket(ticketptr));
 
